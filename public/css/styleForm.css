@@ -1,0 +1,21 @@
+.formularios{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    box-sizing: content-box;
+    padding: 140px 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 30px;
+    
+}
+
+.imagen img{
+    width: 200px;
+    height: 90px;
+}
+.bodyPage{
+    height: auto;
+    min-height: calc(100vh - 80px);
+}

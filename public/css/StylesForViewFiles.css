@@ -1,0 +1,117 @@
+.bodyPage{
+    height: auto;
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+
+    flex-flow: wrap-reverse;
+}
+
+.code{
+    width: 50%;
+    min-width: 450px;  
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 1px solid darkblue; 
+}
+.contenedor{
+    background-color:rgba(6, 21, 31, 1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    
+}
+
+.informacion{
+    width: 40%;
+    min-width: 300px;
+    height: auto;
+}
+
+.sti{
+    min-height: 110px;
+    position: sticky;
+    top: 80px;
+    
+    background-color: white;
+    border-bottom: 1px solid #000;
+    z-index: 9;
+
+}
+.stik{
+    position: sticky;
+    top: 187px;
+    background-color: white;
+    
+}
+
+.linea{
+    display: flex;
+    justify-content: flex-end;
+  
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    position: sticky;
+    top: 112px;
+    z-index: 7;
+    background-color: rgb(141, 141, 251);
+  }
+
+.titu{
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+
+    background-color: #000;
+    
+}
+.imageC{
+    max-width: 100%;
+}
+
+
+.stike{
+    position: sticky;
+    top: 80px;
+    background-color: white;
+    z-index: 9;
+}
+
+@media (max-width: 768px){
+    .informacion{
+        width: 90%;
+        top: 60px;
+
+    }
+    .code{
+        width: 90%;
+        min-width: 0px;  
+
+        border-right: none;
+        
+    }
+    .sti{
+        top: 60px;
+        
+    }
+    .stik{
+        top: 167px;
+    }
+    .stike{
+        top: 60px;
+    }
+    .linea{
+        padding-top: 5px;
+        top:90px ;
+        padding-bottom: 5px;
+    }
+}
+

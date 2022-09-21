@@ -1,0 +1,22 @@
+.bodyPage
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-table{
+    width: 70%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.fila1{
+    background-color: rgba(6, 21, 38, 1.0);
+    text-align: center;
+    color: white;
+}
+.thj{
+   
+   justify-content: center;
+    text-align: center;
+   
+}

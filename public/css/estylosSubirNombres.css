@@ -1,0 +1,31 @@
+.bodyPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario{
+    width: 400px;
+    height: auto;
+    position: sticky;
+    top: 100px;
+    background-color: rgba(6, 21, 38, 1.0);
+    box-sizing: border-box;
+    padding: 40px;
+}
+.seleccionarTipo{
+    display: flex;
+    justify-content: space-between;
+}
+.imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    
+}
+.imagenPrincipal{
+    width: calc(100px + 20vh);
+}

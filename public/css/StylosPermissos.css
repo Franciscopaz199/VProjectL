@@ -1,0 +1,18 @@
+.bodyPage{
+    height: auto;
+    min-height: calc(100vh - 80px);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    color: rgba(6, 21, 38, 1.0);
+
+  
+}
+.textContainer{
+    position: sticky;
+    top: 120px;
+}

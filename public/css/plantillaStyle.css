@@ -1,0 +1,114 @@
+.bodyPage{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px;
+    height: auto;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.izquierda{
+    width: 25%;
+    min-width: 150px;
+}
+
+.derecha{
+    width: 70%;
+    min-width: 450px;
+    height: auto;
+    min-height: auto;
+    border-left: 1px solid #000;
+   
+}
+header{
+    border-bottom: 1px solid #000;
+}
+.formularios{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 0px 50px;
+}
+.formularios h2 {
+    position: sticky;
+    top: 79.5px;
+    background-color: white;
+    z-index: 10;
+    padding-left: 10px 10px;
+}
+.lineaContainer{
+    display: flex;
+    max-width: 60%;
+    justify-content: space-between;
+}
+.borde{
+    box-sizing: border-box;
+    padding: 20px;
+    border-left: 6px solid #000;
+    position: sticky;
+    top: 79.5px;
+    z-index: 10;
+    background-color: white;
+}
+#customFile{
+    display: none;
+
+}
+#customFile + label{
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    padding:10px;
+}
+#customFile + label:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+   
+}
+.active{
+    background-color: #000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .bodyPage{
+        height: auto;
+        padding: 10px;
+    }
+    .container-fluid{
+        display: block;
+    }
+    .izquierda{
+        width: 100%;
+        min-width: 0px;
+        
+    }
+    .borde{
+        border-left: none;
+    }
+    .derecha{
+        min-width: 0px;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #000;
+        margin-top: 5px;
+    }
+    .formularios{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px 0px;
+        width: 100%;
+    }
+    .formularios h2 {
+        top: 59.5px;
+    }
+    .lineaContainer{
+        flex-direction: column;
+        max-width: 90%;
+    }
+}

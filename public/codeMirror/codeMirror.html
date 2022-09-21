@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    <script src="lib/codemirror.js"></script>
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="mode/javascript/javascript.js"></script>
+    <script src="mode/xml/xml.js"></script>
+    <link rel="stylesheet" href="theme/dracula.css">
+    <script src="addon/edit/closetag.js"></script>
+    -->
+
+    <link rel=stylesheet href="doc/docs.css">
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="lib/codemirror.js"></script>
+    <script src="addon/edit/matchbrackets.js"></script>
+    <script src="addon/edit/closetag.js"></script>
+    <link rel="stylesheet" href="addon/hint/show-hint.css">
+    <script src="addon/hint/show-hint.js"></script>
+    <script src="mode/clike/clike.js"></script>
+    <link rel="stylesheet" href="theme/dracula.css">
+</head>
+<body>
+
+    <div class="container">
+        <div><textarea id="cpp-code">
+            #include <iostream>
+            #include "mystuff/util.h"
+            
+            namespace {
+            enum Enum {
+              VAL1, VAL2, VAL3
+            };
+            
+            char32_t unicode_string = U"\U0010FFFF";
+            string raw_string = R"delim(anything
+            you
+            want)delim";
+            
+            int Helper(const MyType& param) {
+              return 0;
+            }
+            } // namespace
+            
+            class ForwardDec;
+            
+            template <class T, class V>
+            class Class : public BaseClass {
+              const MyType<T, V> member_;
+            
+             public:
+              const MyType<T, V>& Method() const {
+                return member_;
+              }
+            
+              void Method2(MyType<T, V>* value);
+            }
+            
+            template <class T, class V>
+            void Class::Method2(MyType<T, V>* value) {
+              std::out << 1 >> method();
+              value->Method3(member_);
+              member_ = value;
+            }
+            </textarea>
+    </div>
+    <button class="button">ver</button>
+</body>
+<style>
+    body{
+        background-color: orange;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        padding: 100px;
+    }
+</style>
+<!-- Create a simple CodeMirror instance -->
+<script>
+     
+   
+   var cppEditor = CodeMirror.fromTextArea(document.getElementById("cpp-code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-c++src",
+        theme: "dracula",
+        autoCloseTags:true
+      });
+
+</script>
+
+
+    
+</html>
